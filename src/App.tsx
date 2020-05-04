@@ -21,28 +21,14 @@ const App: React.FC = () => {
     let rawOutputArr: string[] = [];
     input.split(' ').forEach((word: string) => {
       if(word) {
-        const splitWord: string[] | null = word.match(/(\w{0,})([^\w{0,}])/);
-        let filterWord = word;
-        let addChar = false;
-        if(splitWord && splitWord[2]) {
-          filterWord = splitWord[1];
-          addChar = true;
-        }
-        const outcome = emojis.filter((emoji: Emoji) => emoji.name.includes(filterWord.split('-').join(' ')));
+        const outcome = emojis.filter((emoji: Emoji) => emoji.name.toLowerCase().includes(word.split('-').join(' ').toLowerCase()));
         if(outcome.length > 0) {
           outputArr.push(outcome[0].char);
           rawOutputArr.push(outcome[0].name);
         } else {
-          outputArr.push(filterWord);
-          rawOutputArr.push(filterWord);
+          outputArr.push(word);
+          rawOutputArr.push(word);
         }
-        if(addChar && splitWord) {
-          outputArr.push(splitWord[2]);
-          rawOutputArr.push(splitWord[2]);
-        }
-      } else {
-        outputArr.push(word);
-        rawOutputArr.push(word);
       }
     });
     setOutput(outputArr.join(' '));
