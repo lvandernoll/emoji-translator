@@ -8,23 +8,40 @@
   color: $black;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 $defaultSpacing;
-  height: $headerHeight;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 $defaultSpacing;
-  height: $footerHeight;
-}
-
 .content {
   padding: $defaultSpacing;
-  min-height: calc(100vh - #{$headerHeight});
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.backgroundImage {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: .15;
+  z-index: -1;
+}
+
+.emojis {
+  font-size: 2rem;
+  height: 42px;
+}
+
+.raw {
+  margin: 15px 0;
+  font-style: italic;
+}
+
+.input {
+  padding: 10px 15px;
+  width: 90%;
+  min-width: 300px;
+  border-radius: 50px;
+  border: 2px solid $black;
+  outline: none;
+  background: $white;
 }
