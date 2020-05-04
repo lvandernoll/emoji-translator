@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/emoji-translator/static/css/main.9454e76f.chunk.css",
+    "main.js": "/emoji-translator/static/js/main.72ab4981.chunk.js",
+    "main.js.map": "/emoji-translator/static/js/main.72ab4981.chunk.js.map",
+    "runtime-main.js": "/emoji-translator/static/js/runtime-main.25f70641.js",
+    "runtime-main.js.map": "/emoji-translator/static/js/runtime-main.25f70641.js.map",
+    "static/js/2.0ce9659b.chunk.js": "/emoji-translator/static/js/2.0ce9659b.chunk.js",
+    "static/js/2.0ce9659b.chunk.js.map": "/emoji-translator/static/js/2.0ce9659b.chunk.js.map",
+    "index.html": "/emoji-translator/index.html",
+    "precache-manifest.d7a6776f863aea1c1c2073690e901fdd.js": "/emoji-translator/precache-manifest.d7a6776f863aea1c1c2073690e901fdd.js",
+    "service-worker.js": "/emoji-translator/service-worker.js",
+    "static/css/main.9454e76f.chunk.css.map": "/emoji-translator/static/css/main.9454e76f.chunk.css.map",
+    "static/js/2.0ce9659b.chunk.js.LICENSE.txt": "/emoji-translator/static/js/2.0ce9659b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.25f70641.js",
+    "static/js/2.0ce9659b.chunk.js",
+    "static/css/main.9454e76f.chunk.css",
+    "static/js/main.72ab4981.chunk.js"
+  ]
+}
